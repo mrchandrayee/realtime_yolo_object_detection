@@ -1,0 +1,14 @@
+app:
+  title: "Real-Time YOLO Object Detection"
+  max_upload_mb: 500
+detector:
+  model: "yolo11n.pt"
+  confidence: 0.35
+  iou: 0.45
+  image_size: 640
+  device: ""   # empty = Ultralytics auto-selects CUDA/CPU
+  tracker: "bytetrack.yaml"
+video:
+  fallback_fps: 25
+  process_every_n_frames: 1
+  max_frames: 0 # 0 = unlimited

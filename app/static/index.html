@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>YOLO Object Detection</title><link rel="stylesheet" href="/static/style.css"></head><body><main>
+<header><span>COMPUTER VISION / LIVE ANALYTICS</span><h1>Object Detection</h1><p>YOLO detection · ByteTrack IDs · annotated video</p></header>
+<section class="panel"><h2>Model status</h2><p id="health">Checking…</p></section>
+<section class="panel"><h2>Analyze a video</h2><p>Upload a video to detect common objects, draw bounding boxes and track object IDs across frames.</p><form id="form"><input type="file" name="video" accept="video/*" required><button>Start detection</button></form><p id="status"></p><div id="result"></div></section>
+<section class="panel"><h2>Pipeline</h2><div class="steps"><span>Video frames</span><span>YOLO inference</span><span>ByteTrack</span><span>Annotations</span><span>CSV / JSON</span></div></section>
+<footer>Model detections can be wrong. Validate results before relying on them.</footer></main><script src="/static/app.js"></script></body></html>
